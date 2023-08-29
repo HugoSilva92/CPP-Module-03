@@ -5,7 +5,10 @@
 
 class ClapTrap
 {
-    private:
+    // Needed to change to protected so my child class can access to it,
+    // otherwise I cant use the variables in the child.
+    // https://stackoverflow.com/questions/224966/what-is-the-difference-between-private-and-protected-members-of-c-classes
+    protected:
         std::string     _name;
         unsigned int    _HitPoints;
         unsigned int    _EnergyPoints;

@@ -8,7 +8,6 @@ ClapTrap::ClapTrap(std::string name) : _name(name), _HitPoints(10), _EnergyPoint
     std::cout << "Parameterized constructor called" << std::endl;
 }
 
-
 ClapTrap::ClapTrap(ClapTrap &obj)
 {
     std::cout << "Copy constructor called" << std::endl;
