@@ -5,6 +5,7 @@ int	main(void){
 
 	teste.ScavAttack("Alguem");
 	std::cout << "O nome do ClapTrap e: " << teste.getName() << std::endl;
+	std::cout << "O nome do ScavTrap e: " << teste.ScavGetName() << std::endl;
 	std::cout << teste << std::endl;
 	teste.guardGate();
 	teste.ScavAttack("Good-boy");

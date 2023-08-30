@@ -14,6 +14,7 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
+	this->_name = name;
 	this->_AttackDamage = 20;
 	this->_EnergyPoints = 50;
 	this->_HitPoints = 100;
@@ -64,29 +65,12 @@ void ScavTrap::ScavAttack(const std::string &target)
 	this->_EnergyPoints--;
 }
 
-int ScavTrap::ScavGetLife(void) const
-{
-	return this->_HitPoints;
-}
-int ScavTrap::ScavGetEnergy(void) const
-{
-	return this->_EnergyPoints;
-}
-int ScavTrap::ScavGetDamage(void) const
-{
-	return this->_AttackDamage;
-}
-std::string ScavTrap::ScavGetName(void) const
-{
-	return this->_name;
-}
-
 std::ostream &operator<<(std::ostream &out, ScavTrap const &mob)
 {
 	out << std::endl;
-	out << "Name: " << mob.ScavGetName() << std::endl;
-	out << "Attack Damage: " << mob.ScavGetDamage() << std::endl;
-	out << "Energy left: " << mob.ScavGetEnergy() << std::endl;
-	out << "Life left: " << mob.ScavGetLife() << std::endl;
+	out << "Name: " << mob.getName() << std::endl;
+	out << "Attack Damage: " << mob.getDamage() << std::endl;
+	out << "Energy left: " << mob.getEnergy() << std::endl;
+	out << "Life left: " << mob.getLife() << std::endl;
 	return out;
 }

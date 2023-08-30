@@ -10,7 +10,6 @@ FragTrap::FragTrap(void){
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name){
 	std::cout << "FragTrap Parameter Constructor" << std::endl;
-	this->_name = name;
 	this->_AttackDamage = 30;
 	this->_EnergyPoints = 100;
 	this->_HitPoints = 100;
