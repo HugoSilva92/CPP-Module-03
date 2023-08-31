@@ -36,7 +36,7 @@ void		FragTrap::highFiveGuys(void){
 	std::cout << "Can I get a awesome HIGH-FIVE?" << std::endl;
 }
 
-void		FragTrap::FragAttack(const std::string& target){
+void		FragTrap::attack(const std::string& target){
 	if (this->_EnergyPoints == 0)
 	{
 		std::cout << _name << " is out of energy points" << std::endl;

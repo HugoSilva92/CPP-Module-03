@@ -3,13 +3,12 @@
 int	main(void){
 	ScavTrap teste("Bad-Boy");
 
-	teste.ScavAttack("Alguem");
-	std::cout << "O nome do ClapTrap e: " << teste.getName() << std::endl;
+	teste.attack("Alguem");
 	std::cout << "O nome do ScavTrap e: " << teste.getName() << std::endl;
 	std::cout << teste << std::endl;
-	teste.ScavAttack("Good-boy");
+	teste.attack("Good-boy");
 	std::cout << teste.getDamage() << std::endl;
-	teste.ScavAttack("Good-boy");
+	teste.attack("Good-boy");
 	std::cout << teste << std::endl;
 	teste.guardGate();
 }

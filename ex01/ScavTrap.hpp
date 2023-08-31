@@ -13,7 +13,7 @@ class ScavTrap: public ClapTrap{
 	ScavTrap& operator= (ScavTrap const& obj);
 	~ScavTrap();
 	void		guardGate();
-	void		ScavAttack(const std::string& target);
+	void		attack(const std::string& target);
 };
 
 std::ostream &operator<<(std::ostream &out, ScavTrap const &mob);

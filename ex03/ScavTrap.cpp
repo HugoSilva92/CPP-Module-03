@@ -2,10 +2,10 @@
 
 ScavTrap::ScavTrap()
 {
-	this->_name = "default";
 	this->_AttackDamage = 20;
 	this->_EnergyPoints = 50;
 	this->_HitPoints = 100;
+	//this->scavEnergy = 50;
 	std::cout << "ScavTrap Default constructor called" << std::endl;
 };
 
@@ -17,6 +17,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 	this->_AttackDamage = 20;
 	this->_EnergyPoints = 50;
 	this->_HitPoints = 100;
+	//this->scavEnergy = 50;
 	std::cout << "ScavTrap Parameterized constructor called" << std::endl;
 }
 
@@ -46,19 +47,19 @@ void ScavTrap::guardGate()
 	std::cout << "ScavTrap is now on Gate Keep Mode!" << std::endl;
 }
 
-void ScavTrap::ScavAttack(const std::string &target)
+void ScavTrap::attack(const std::string &target)
 {
 	if (this->_EnergyPoints == 0)
 	{
-		std::cout << _name << " is out of energy points" << std::endl;
+		std::cout << this->_name << " is out of energy points" << std::endl;
 		return;
 	}
 	else if (this->_HitPoints <= 0)
 	{
-		std::cout << _name << " is broken, needs to be repaired" << std::endl;
+		std::cout << this->_name << " is broken, needs to be repaired" << std::endl;
 		return;
 	}
-	std::cout << "ScavTrap " << _name << " attacks "
+	std::cout << "ScavTrap " << this->_name << " attacks "
 			  << target << ", causing " << _AttackDamage
 			  << " points of damage!" << std::endl;
 	this->_EnergyPoints--;

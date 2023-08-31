@@ -46,7 +46,7 @@ void ScavTrap::guardGate()
 	std::cout << "ScavTrap is now on Gate Keep Mode!" << std::endl;
 }
 
-void ScavTrap::ScavAttack(const std::string &target)
+void ScavTrap::attack(const std::string &target)
 {
 	if (this->_EnergyPoints == 0)
 	{

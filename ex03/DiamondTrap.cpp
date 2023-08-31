@@ -16,6 +16,10 @@ DiamondTrap::DiamondTrap(){
 
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name){
 	this->_name = name;
+	/*	this->_EnergyPoints = ScavTrap::scavEnergy;
+	this->_HitPoints = FragTrap::fragHitPoints;
+	this->_AttackDamage = FragTrap::fragAttack;*/
+	//this is a way to do it, by declaring other variables that arent going to get from the parent.
 	this->_EnergyPoints = 50;
 	this->_HitPoints = 100;
 	this->_AttackDamage = 30;
@@ -42,8 +46,8 @@ DiamondTrap::~DiamondTrap(){
 }
 
 
-void	DiamondTrap::diamondAttack(std::string target){
-	ScavTrap::ScavAttack(target);
+void	DiamondTrap::attack(std::string target){
+	ScavTrap::attack(target);
 }
 
 void	DiamondTrap::whoAmI(void){

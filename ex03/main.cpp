@@ -17,7 +17,7 @@ int	main(void){
 	std::cout << std::endl;
 
 	std::cout << std::endl;*/
-	Diamond.diamondAttack("Someone");
+	Diamond.attack("Someone");
 	/*std::cout << std::endl;
 	second.diamondAttack("Someone");
 	std::cout << std::endl;

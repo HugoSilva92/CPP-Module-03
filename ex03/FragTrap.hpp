@@ -11,7 +11,9 @@ class	FragTrap : virtual public ClapTrap {
 	FragTrap& operator= (FragTrap const& obj);
 	~FragTrap();
 	void		highFiveGuys(void);
-	void		FragAttack(const std::string& target);
+	void		attack(const std::string& target);
+	/* unsigned int	fragHitPoints;			variables that dont go to ClapTrap.
+	unsigned int	fragAttack; */
 };
 
 std::ostream	&operator<< (std::ostream &out, FragTrap const& mob);

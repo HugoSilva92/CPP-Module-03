@@ -6,6 +6,8 @@ FragTrap::FragTrap(void){
 	this->_AttackDamage = 30;
 	this->_EnergyPoints = 100;
 	this->_HitPoints = 100;
+	/* fragAttack = 30;
+	fragHitPoints = 100; */
 }
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name){
@@ -13,6 +15,8 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name){
 	this->_AttackDamage = 30;
 	this->_EnergyPoints = 100;
 	this->_HitPoints = 100;
+	/* fragAttack = 30;
+	fragHitPoints = 100; */
 }
 
 FragTrap::FragTrap(FragTrap& obj) : ClapTrap(obj){
@@ -35,7 +39,7 @@ void		FragTrap::highFiveGuys(void){
 	std::cout << "Can I get a awesome HIGH-FIVE?" << std::endl;
 }
 
-void		FragTrap::FragAttack(const std::string& target){
+void		FragTrap::attack(const std::string& target){
 	if (this->_EnergyPoints == 0)
 	{
 		std::cout << _name << " is out of energy points" << std::endl;

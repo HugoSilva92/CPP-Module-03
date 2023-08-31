@@ -17,7 +17,7 @@ class DiamondTrap : public FragTrap, public ScavTrap{
 		DiamondTrap(DiamondTrap& obj);
 		DiamondTrap& operator=(DiamondTrap const& obj);
 		~DiamondTrap();
-		void	diamondAttack(std::string target);
+		void	attack(std::string target);
 		void	whoAmI(void);
 		std::string dGetName(void) const;
 		//using ScavTrap::ScavAttack; found out late about this, but does the same as the diamondAttack function!
