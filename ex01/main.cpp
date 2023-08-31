@@ -5,15 +5,13 @@ int	main(void){
 
 	teste.ScavAttack("Alguem");
 	std::cout << "O nome do ClapTrap e: " << teste.getName() << std::endl;
-	std::cout << "O nome do ScavTrap e: " << teste.ScavGetName() << std::endl;
+	std::cout << "O nome do ScavTrap e: " << teste.getName() << std::endl;
+	std::cout << teste << std::endl;
+	teste.ScavAttack("Good-boy");
+	std::cout << teste.getDamage() << std::endl;
+	teste.ScavAttack("Good-boy");
 	std::cout << teste << std::endl;
 	teste.guardGate();
-	teste.ScavAttack("Good-boy");
-	teste.attack("Good-Boy");
-	//teste.setDamage(15);
-	std::cout << teste.ScavGetDamage() << std::endl;
-	teste.ScavAttack("Good-boy");
-	std::cout << teste << std::endl;
 }
 
 

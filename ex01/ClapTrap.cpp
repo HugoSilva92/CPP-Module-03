@@ -1,22 +1,22 @@
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap() : _name("Default"), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0){
-    std::cout << "Default constructor called" << std::endl;
+    std::cout << "ClapTrap Default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _HitPoints(10), _EnergyPoints(10), _AttackDamage(0){
-    std::cout << "Parameterized constructor called" << std::endl;
+    std::cout << "ClapTrap Parameterized constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap &obj)
 {
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << "ClapTrap Copy constructor called" << std::endl;
     *this = obj;
 }
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &obj)
 {
-    std::cout << "Copy assignement operator called" << std::endl;
+    std::cout << "ClapTrap Copy assignement operator called" << std::endl;
     this->_name = obj._name;
     this->_AttackDamage = obj._AttackDamage;
     this->_EnergyPoints = obj._EnergyPoints;
@@ -26,7 +26,7 @@ ClapTrap &ClapTrap::operator=(ClapTrap const &obj)
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Deconstructor Called" << std::endl;
+    std::cout << "ClapTrap Deconstructor Called" << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target)

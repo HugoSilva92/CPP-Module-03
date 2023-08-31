@@ -7,9 +7,9 @@ int	main(void){
 
 	Scav.ScavAttack("Alguem");
 	Frag.FragAttack("Amigo de Alguem");
-	std::cout << "O nome do ScavTrap e: " << Scav.ScavGetName() << std::endl;
+	std::cout << "O nome do ScavTrap e: " << Scav.getName() << std::endl;
 	std::cout << "O nome do ClapTrap pai do Scav e: " << Scav.getName() << std::endl;
-	std::cout << "O nome do FragTrap e: " << Frag.FragGetName() << std::endl;
+	std::cout << "O nome do FragTrap e: " << Frag.getName() << std::endl;
 	std::cout << "O nome do ClapTrap pai do Frag e: " << Frag.getName() << std::endl;
 	std::cout << Scav << std::endl;
 	std::cout << Frag << std::endl;
